@@ -1,0 +1,12 @@
+r_fiber_exp 75E-6[m] "fiber radius"
+r_tb 4[mm] "inlet inner tube radius"
+s_tb 1[mm] "tube wall thickness"
+l_heater "53[mm] + heater_thermal_exp" "heater lengths including estimated thermal expansion"
+l_tb 190E-3[m] "tube lengths"
+tube_cut_start 40E-3[m] "length of the entrance region that is existent in the experiment but not relevant for the simulation"
+mainheater_start mainheater_start(Nr)[mm]-err*0.5[mm] "start of the main heater zone"
+thermoCoupleDepth 14[mm] "distance from the end of the main heater zone to the thermocouple tip"
+heater_thermal_exp round(1/mesh_res[1/mm]*(T_max_(Nr)-T_amb[1/K])*(19)*10^-6*53)[mm]*mesh_res[1/mm] "estimated thermal expansion of the main heater"
+s_W_ini 1[um] "initial W thickness"
+mesh_res 1e-3[m] "mesh resolution"
+export_resolution 1e-3 [m]

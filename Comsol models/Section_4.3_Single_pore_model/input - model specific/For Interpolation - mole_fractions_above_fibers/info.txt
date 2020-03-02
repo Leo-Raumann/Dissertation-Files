@@ -1,0 +1,3 @@
+1: error upper bound
+-1: error lower bound 
+nothing: mean

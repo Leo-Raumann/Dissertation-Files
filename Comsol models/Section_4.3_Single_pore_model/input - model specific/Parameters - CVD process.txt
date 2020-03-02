@@ -1,0 +1,8 @@
+Nr 4001 "ID, first three digits = fabric type, last digit = layer (so e.g. 4001 = fabric 400, first layer)"
+err 0 "err = 0: other parameters result in mean value without error, err = 1: upper error bound, err = -1: lower error bound."
+T_err "10 [K]" ""
+T_heater "830 [K] + err * T_err" "heater Temperature (here constant throughout the entire model)"
+x_H2_inlet "if(err==0, x_H2(position_in_macro_model), if(err==1, x_H2_err_hi(position_in_macro_model), x_H2_err_low(position_in_macro_model)))" "molefraction h2 at inlet, position_in_macro_model can be found in the geometry parameters, if conditions to get: ""err = 0: mean, err = 1: upper error bound, err = -1: lower error bound."
+x_WF6_inlet "if(err==0, x_WF6(position_in_macro_model), if(err==1, x_WF6_err_hi(position_in_macro_model), x_WF6_err_low(position_in_macro_model)))" "molefraction WF6 at inlet, position_in_macro_model can be found in the geometry parameters, if conditions to get: ""err = 0: mean, err = 1: upper error bound, err = -1: lower error bound."
+p_tot p_tot_(Nr)[Pa] "total pressure"
+t_max_exp t_max_(Nr)[min] "deposition duration"

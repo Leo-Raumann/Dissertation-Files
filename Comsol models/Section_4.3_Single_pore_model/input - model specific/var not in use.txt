@@ -1,0 +1,7 @@
+nf R_eff*(-3*chem.M_H2-chem.M_WF6+6*chem.M_HF) ""
+epsilon_rad_W 0.42-1.98E-5*T[1/K] "emissivity tungsten T_dependend"
+dynamic_visc_mod chem.eta*(1+g2s*10^3) "to change gas properties within the pseudo contact gap to solid properties"
+k_gas_mod chem.kXX+g2s*(mat1.def.k11-chem.kXX) "chem.kXX = kYY = kZZ"
+density_gas_mod chem.rho+g2s*(mat1.def.rho-chem.rho)/2 "to change gas properties within the pseudo contact gap to solid properties"
+L_char_eff L_char*(1-g2s*0.99) "effective L_char for knudsen diff is divided by 100 in pseudo gap"
+g2s step_GasProp(0.83*L_char[1/m]) "step_WD((wd.Dw[1/m]+wd1.Dw[1/m])*0.5), 0=gas; 1=solid"

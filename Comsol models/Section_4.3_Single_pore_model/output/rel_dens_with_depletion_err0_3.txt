@@ -1,0 +1,16 @@
+% Model:              2D_fiberInterAct_fullPore_5_ID30,39.mph
+% Version:            COMSOL 5.4.0.346
+% Date:               May 30 2019, 14:17
+% Dimension:          1
+% Nodes:              8
+% Expressions:        1
+% Description:        Global
+% x             Height
+30.000          0.26184
+30.000          0.44998
+30.000          0.82521
+30.000          0.82521
+39.000          0.23921
+39.000          0.46202
+39.000          0.78134
+39.000          0.78134

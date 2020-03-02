@@ -1,0 +1,6 @@
+D_K_H2 L_char/3*(8*R_const*T/(pi*chem.M_H2))^0.5 "Knudsen diffusion coefficient for H2, diss Eq. 4.6"
+D_K_HF L_char/3*(8*R_const*T/(pi*chem.M_HF))^0.5 "Knudsen diffusion coefficient for HF, diss Eq. 4.6"
+D_K_WF6 L_char/3*(8*R_const*T/(pi*chem.M_WF6))^0.5 "Knudsen diffusion coefficient for WF6, diss Eq. 4.6"
+D_eff_H2 "(1/D_mix_H2 + 1/D_K_H2)^-1" "H2 effective diffusion coefficient, Diss Eq. 4.5"
+D_eff_HF "(1/D_mix_HF + 1/D_K_HF)^-1" "HF effective diffusion coefficient, Diss Eq. 4.5"
+D_eff_WF6 "(1/D_mix_WF6 + 1/D_K_WF6)^-1" "WF6 effective diffusion coefficient, Diss Eq. 4.5"

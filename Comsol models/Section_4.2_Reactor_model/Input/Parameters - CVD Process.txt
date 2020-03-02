@@ -1,0 +1,9 @@
+err 0 "help factor see variable definiation for error bars"
+T_amb 19[degC] "Background temperature"
+T_heater (500-20+err*10)[degC] T_(Nr)[K]*auxSweep
+T_initial T_heater ""
+p_tot 12000[Pa] ""
+flow_H2 1500 ""
+flow_WF6 400 ""
+p_H2_inlet p_tot*flow_H2/(flow_H2+flow_WF6) ""
+r_max_estimated (k0*exp(-E_a/(R_const*T_heater))*(p_H2_inlet[1/Pa])^0.5)[m/s] ""

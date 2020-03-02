@@ -1,0 +1,6 @@
+p_H2_inlet p_tot*x_H2(position_in_macro_model) ""
+p_WF6_inlet p_tot*x_WF6(position_in_macro_model) ""
+r_H2_dis_est k0*exp(-E_a/(R_const*T_heater))*(p_H2_inlet[1/Pa])^0.5[m/s] ""
+r_max_estimated min(r_H2_dis_est,r_McIn_est) "also used for stp_lim"
+r_McIn_est (1/(k1*p_WF6_inlet[1/Pa])+1/(k2*(p_WF6_inlet[1/Pa])^(1/6)*(p_H2_inlet[1/Pa])^0.5*exp(-E_a_McIn/(R_const*T_heater))))^-1[m/s] ""
+t_max_esti (ff_middlePoint_dist/2-r_fiber)/r_max_estimated ""

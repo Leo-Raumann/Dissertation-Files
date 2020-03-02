@@ -1,0 +1,5 @@
+Python scripts were written with Jupyter Notebook, Version 5.7.8
+
+Comsol models were built in Version 5.4.
+
+The model folder names start with the section, in which the model is discribed within my dissertation (Leonard Raumann, 2020).

@@ -1,0 +1,6 @@
+D_H2_WF6 ((2.83284566353e-05*(T[1/K])^2+0.00386924446112*T[1/K]+0.00126026013098)/(p+p_tot)[1/Pa])[m^2/s] "H2 WF6 binary diffusion coefficient"
+D_HF_WF6 ((9.50038898389e-06*(T[1/K])^2+-0.00044958433458*T[1/K]+0.114841934393)/(p+p_tot)[1/Pa])[m^2/s] "HF WF6 binary diffusion coefficient"
+D_H2_HF ((3.52709880838e-05*(T[1/K])^2+0.0290944213975*T[1/K]+-4.87299177295)/(p+p_tot)[1/Pa])[m^2/s] "H2 HF binary diffusion coefficient"
+D_mix_H2 (1-tcs.x_wH2)/(tcs.x_wHF/D_H2_HF+tcs.x_wWF6/D_H2_WF6+eps) "mixture avaraged diffusion coefficient for H2, diss Eq. 3.4"
+D_mix_HF (1-tcs.x_wHF)/(tcs.x_wH2/D_H2_HF+tcs.x_wWF6/D_HF_WF6+eps) "mixture avaraged diffusion coefficient for HF, diss Eq. 3.4"
+D_mix_WF6 (1-tcs.x_wWF6)/(tcs.x_wH2/D_H2_WF6+tcs.x_wHF/D_HF_WF6+eps) "mixture avaraged diffusion coefficient for WF6, diss Eq. 3.4"

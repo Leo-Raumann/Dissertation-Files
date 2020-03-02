@@ -1,0 +1,2 @@
+own implementation of knudsen into fick succesfull, deviation 0-0.1%.
+(advantage: can be triggered now with a parameter by setting it to zero or one)

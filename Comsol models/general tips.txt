@@ -1,0 +1,13 @@
+- always save before running simulation and often save with a new version number to be able to go back. Recovery files got always corrupted for me and could not be repaired.
+
+- error messages in comsol are unfortunatelly rarely helpful. Especially "division by zero" drove me crazy. This message doesnt help at all as the cause can basically be anything. Maybe somewhere in the model a wrong input or wrong path to a parameter input file, or sub-optimal setting. A too high temperature or consumption? Sometimes it helps to increase model stability by smoothen stiff gradients in any quantity, by using finer mesh or smaller time step sizes, or by simulating the different interfaces not all at once. But sometimes it just needs a delete of the solution nodes or a reset in the solver settings (non default solver settings can be restored via a method in the developer branch)
+
+- to create a comsol model file from a java file one has to run a batch with 
+
+"C:\Program Files\COMSOL\COMSOL52a\Multiphysics\bin\win64\comsolcompile.exe" -jdkroot "C:\Program Files\Java\jdk1.8.0_111" MODEL NAME AS SAVED FROM COMSOL.java
+cmd
+
+located in the same folder as the java file.
+
+the resulting class file can be opened with comsol again.
+

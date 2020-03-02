@@ -1,0 +1,5 @@
+L_char min(min(comp1.wd.Dw+comp1.wd1.Dw,comp1.wd.Dw+comp1.wd2.Dw),comp1.wd1.Dw+comp1.wd2.Dw) "characteristic lengths, Eq. 4.3 and Fig. 4.16 in diss"
+myG_pseudo_contact_stop step_myG(1/(eps+L_char[1/m])) "diss Fig. 4.17"
+stop_condition ff_middlePoint_dist/2-r_fiber_theoreticContact(1) "stop condition, diss Eq. 4.4d"
+T T_heater "setting variable to constant parameter value so that other equations do not have to be changed"
+p p_tot "setting variable to constant parameter value so that other equations do not have to be changed"

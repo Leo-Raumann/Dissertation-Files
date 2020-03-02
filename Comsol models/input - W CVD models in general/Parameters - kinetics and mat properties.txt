@@ -1,0 +1,8 @@
+E_a 73.7[kJ/mol] "activation energy H2 dissociation"
+k0 38.22e-6 "semiempiric constant for diss equation 3.10b in [m*s^-1*Pa^-0.5]"
+E_a_McIn 64[kJ/mol] "activation energy HF desorption from McInerney2000"
+k1 32.63e-9 "semiempiric constant for diss equation 3.10a in [m s^-1 Pa^-1] from McInerney2000"
+k2 45.79e-7 "semiempiric constant for diss equation 3.10a in [m s^-1 Pa^(-2/3)] from McInerney2000"
+epsilon_rad_Cu 0.6 "emissivity copper"
+epsilon_rad_Steel 0.35 "emissivity stainless steel"
+epsilon_rad_W 0.3+err*0.1 "emissivity tungsten"

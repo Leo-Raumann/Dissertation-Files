@@ -1,0 +1,3 @@
+controll_area x_f2*(y_f1+y_f2)/2+(x_f3-x_f2)*(y_f2+y_f3)/2 ""
+binary_solid_or_gas step_GasProp(0.7*(wd.Dw[1/m]+wd1.Dw[1/m]+wd2.Dw[1/m])) "0=gas,1=W; arbitrary factor can be checked in the surface plots ""tungsten gas vis no mesh"""
+WfW_rel_density 1-pore_area(1-binary_solid_or_gas)/controll_area "relative density of WfW (1-porosity)"
